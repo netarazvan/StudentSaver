@@ -1,0 +1,27 @@
+﻿.nav-bar {
+    background-color: rgba(0,0,0,0.7);
+    border-bottom: solid;
+    border-bottom-color: #12F509;
+    margin-bottom:150px;
+    
+}
+.menu-item {
+    margin-left:40px;
+    display: inline-block;
+    color: lightgray;
+    width: auto;
+    height: auto;
+    
+    font-weight: bold;
+    
+    text-align: center;
+}
+
+
+.menu-item:hover {
+    color: #12F509;
+    
+}
+a:hover {
+text-decoration:none;
+}

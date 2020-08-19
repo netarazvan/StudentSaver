@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link rel="stylesheet" href="~/css/Styles.css" />
+<link href="~/css/StyleSheet.css" rel="stylesheet" />
+<form class="Container" method="post">
+    <select class="custom-select" name="Specializare">
+        <option>AIA</option>
+        <option>ISM</option>
+        <option>MR</option>
+        <option>CEN</option>
+        <option>CRO</option>
+    </select>
+
+    <select class="custom-select" name="An">
+        <option>I</option>
+        <option>II</option>
+        <option>III</option>
+        <option>IV</option>
+    </select>
+    <input class="SButton" id="Submit1" type="submit" value="Teach Me!" />
+</form>
+@foreach (string file in Model.FilesInFolder)
+{
+<div class="result">
+    <span>@file</span>
+    
+    <a href="~/Cursuri/@Model.Specializare/@Model.An/@file" download>
+        <input class="dwnl"  id="Button" type="button" value="DOWNLOAD" />
+    </a>
+</div>
+}
